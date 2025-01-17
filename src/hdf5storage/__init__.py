@@ -1892,6 +1892,12 @@ class File(collections.abc.MutableMapping):
         towrite = []
         for p, v in mdict.items():
             groupname, targetname = pathesc.process_path(p)
+
+            # Remove __version__, __globals__, __header__ from .mat
+            v.pop("__version__")
+            v.pop("__globals__")
+            v.pop("__header__")
+
             if posixpath.isabs(groupname):
                 prefix = ""
             else:
