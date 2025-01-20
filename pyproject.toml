@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hdf5storage"
 version = "0.2"
-description = "Utilities to read/write Python types to/from HDF5 files, including MATLAB v7.3 MAT files (Custom adapted for PoliMOVE)"
+description = "Utilities to read/write Python types to/from HDF5 files, including MATLAB v7.3 MAT files (Custom adapted by PoliMOVE)"
 readme = "README.rst"
 authors = [
     {name = "Freja Nordsiek", email = "fnordsie@posteo.net"},
